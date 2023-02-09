@@ -11,6 +11,7 @@
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="assets/scoreboard.png" />
     <!-- css -->
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
     <link rel="stylesheet" href="styles/light.css" id="theme" />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,15 +22,53 @@
 <body>
 
     <div class="header">
-
+        <h1 class="logo">
+            <a href="#" title="">
+                <img src="https://picsum.photos/60/40?random=1" alt="">
+            </a>
+            <p>Scoreboard</p>
+            <img src="assets/MoonIcon.svg" alt="Dark mode icon">
+            <img src="assets/SunIcon.svg" alt="Light mode icon">
+        </h1>
     </div>
 
-    <div class="container">
+    <div class="main">
+        <div class="red">
+            <div class="flag"></div>
+            <div class="score"></div>
+            <div class="score-btn"></div>
+            <div class="foul"></div>
+            <div class="foul-score"></div>
+            <div class="foul-btn"></div>
+        </div>
 
+        <div class="middle">
+            <div class="time"></div>
+            <div class="btn-list"></div>
+        </div>
+
+        <div class="blue">
+            <div class="flag"></div>
+            <div class="score"></div>
+            <div class="score-btn"></div>
+            <div class="foul"></div>
+            <div class="foul-score"></div>
+            <div class="foul-btn"></div>
+        </div>
     </div>
 
     <div class="footer">
-        &copy; copyright 2023 by kells
+        <div class="container">
+            <div class="row">
+                <div class="col item social">
+                    <a href="www.linkedin.com/in/yeh-hong-ping-14559b264" title="Linkedin">
+                        <img src="assets/linkedin.svg" alt="Linkedin"></a>
+                    <a href="https://github.com/KELLSPING" title="GitHub">
+                        <img src="assets/github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; copyright 2023 by kells</p>
+        </div>
     </div>
 
 </body>
