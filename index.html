@@ -21,6 +21,8 @@
 
 <body>
 
+    
+    <!-- header -->
     <div class="header">
         <h1 class="logo">
             <a href="#" title="">
@@ -32,31 +34,62 @@
         </h1>
     </div>
 
+
+    <!-- main -->
     <div class="main">
         <div class="red">
             <div class="flag"></div>
-            <div class="score"></div>
-            <div class="score-btn"></div>
+            <div class="score">
+                <p>0</p>
+            </div>
+            <div class="score-btn">
+                <button id="red-plus-one" onclick="plusOne()">+1</button>
+                <button id="red-plus-two" onclick="plusTwo()">+2</button>
+                <button id="red-plus-three" onclick="plusThree()">+3</button>
+                <button id="red-minus-one" onclick="minusOne()">-1</button>
+            </div>
             <div class="foul"></div>
-            <div class="foul-score"></div>
-            <div class="foul-btn"></div>
+            <div class="foul-num">
+                <p>0</p>
+            </div>
+            <div class="foul-btn">
+                <button id="btn-one" onclick="plusOne()">+1</button>
+                <button id="btn-one_minus" onclick="minusOne()">-1</button>
+            </div>
         </div>
 
         <div class="middle">
             <div class="time"></div>
             <div class="btn-list"></div>
+            <div class="round"></div>
+            <div class="round-num">
+                <p>0</p>
+            </div>
         </div>
 
         <div class="blue">
             <div class="flag"></div>
-            <div class="score"></div>
-            <div class="score-btn"></div>
+            <div class="score">
+                <p>0</p>
+            </div>
+            <div class="score-btn">
+                <button id="blue-plus-one" onclick="plusOne()">+1</button>
+                <button id="blue-plus-two" onclick="plusTwo()">+2</button>
+                <button id="blue-plus-three" onclick="plusThree()">+3</button>
+                <button id="blue-minus-one" onclick="minusOne()">-1</button>
             <div class="foul"></div>
-            <div class="foul-score"></div>
-            <div class="foul-btn"></div>
+            <div class="foul-num">
+                <p>0</p>
+            </div>
+            <div class="foul-btn">
+                <button id="btn-one" onclick="plusOne()">+1</button>
+                <button id="btn-one_minus" onclick="minusOne()">-1</button>
+            </div>
         </div>
     </div>
 
+
+    <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
