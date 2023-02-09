@@ -24,21 +24,27 @@
     
     <!-- header -->
     <div class="header">
-        <h1 class="logo">
-            <a href="#" title="">
-                <img src="https://picsum.photos/60/40?random=1" alt="">
-            </a>
+        <div class="logo">
+            <img src="assets/scoreboard2.svg" alt="random image">
+        </div>
+        <div class="text">
             <p>Scoreboard</p>
+        </div>
+        <div class="mode">
             <img src="assets/MoonIcon.svg" alt="Dark mode icon">
-            <img src="assets/SunIcon.svg" alt="Light mode icon">
-        </h1>
+        </div>
     </div>
 
 
     <!-- main -->
-    <div class="main">
+    <div class="content">
+        <!-- red -->
         <div class="red">
-            <div class="flag"></div>
+            <div class="flag">
+                <div class="input-text">
+                    <input type="text">
+                </div>
+            </div>
             <div class="score">
                 <p>0</p>
             </div>
@@ -48,27 +54,35 @@
                 <button id="red-plus-three" onclick="plusThree()">+3</button>
                 <button id="red-minus-one" onclick="minusOne()">-1</button>
             </div>
-            <div class="foul"></div>
+            <div class="foul">
+                <p>Foul</p>
+            </div>
             <div class="foul-num">
                 <p>0</p>
             </div>
             <div class="foul-btn">
-                <button id="btn-one" onclick="plusOne()">+1</button>
-                <button id="btn-one_minus" onclick="minusOne()">-1</button>
+                <button id="red-foul-plus-one" onclick="plusOne()">+1</button>
+                <button id="red-foul-minus-one" onclick="minusOne()">-1</button>
             </div>
         </div>
-
+        <!-- middle -->
         <div class="middle">
-            <div class="time"></div>
+            <div class="time">
+                <p>00:00</p>
+            </div>
             <div class="btn-list"></div>
             <div class="round"></div>
             <div class="round-num">
                 <p>0</p>
             </div>
         </div>
-
+        <!-- blue -->
         <div class="blue">
-            <div class="flag"></div>
+            <div class="flag">
+                <div class="input-text">
+                    <input id="text" type="text">
+                </div>
+            </div>
             <div class="score">
                 <p>0</p>
             </div>
@@ -77,31 +91,34 @@
                 <button id="blue-plus-two" onclick="plusTwo()">+2</button>
                 <button id="blue-plus-three" onclick="plusThree()">+3</button>
                 <button id="blue-minus-one" onclick="minusOne()">-1</button>
-            <div class="foul"></div>
+            </div>
+            <div class="foul">
+                <p>Foul</p>
+            </div>
             <div class="foul-num">
                 <p>0</p>
             </div>
             <div class="foul-btn">
-                <button id="btn-one" onclick="plusOne()">+1</button>
-                <button id="btn-one_minus" onclick="minusOne()">-1</button>
+                <button id="blue-foul-plus-one" onclick="plusOne()">+1</button>
+                <button id="blue-foul-minus-one" onclick="minusOne()">-1</button>
             </div>
         </div>
-    </div>
+</div>
 
 
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col item social">
-                    <a href="www.linkedin.com/in/yeh-hong-ping-14559b264" title="Linkedin">
-                        <img src="assets/linkedin.svg" alt="Linkedin"></a>
-                    <a href="https://github.com/KELLSPING" title="GitHub">
-                        <img src="assets/github.svg" alt="GitHub"></a>
-                </div>
-            </div>
-            <p class="copyright">&copy; copyright 2023 by kells</p>
+        <div class="contact">
+            <p>Contact</p>
+            <a href="www.linkedin.com/in/yeh-hong-ping-14559b264" title="Linkedin">
+                <img src="assets/linkedin.svg" alt="Linkedin"></a>
+            <a href="https://github.com/KELLSPING" title="GitHub">
+                <img src="assets/github.svg" alt="GitHub"></a>
         </div>
+        <div class="copyright">
+            <p>&copy; copyright 2023 by kells</p>
+        </div>
+        
     </div>
 
 </body>
