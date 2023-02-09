@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoreboard</title>
+
+    <meta name="description" content="Simple Scoreboard with dark mode." />
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="assets/scoreboard.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+    <link rel="stylesheet" href="styles/light.css" id="theme" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    
+    <!-- header -->
+    <div class="header">
+        <h1 class="logo">
+            <a href="#" title="">
+                <img src="https://picsum.photos/60/40?random=1" alt="">
+            </a>
+            <p>Scoreboard</p>
+            <img src="assets/MoonIcon.svg" alt="Dark mode icon">
+            <img src="assets/SunIcon.svg" alt="Light mode icon">
+        </h1>
+    </div>
+
+
+    <!-- main -->
+    <div class="main">
+        <div class="red">
+            <div class="flag"></div>
+            <div class="score">
+                <p>0</p>
+            </div>
+            <div class="score-btn">
+                <button id="red-plus-one" onclick="plusOne()">+1</button>
+                <button id="red-plus-two" onclick="plusTwo()">+2</button>
+                <button id="red-plus-three" onclick="plusThree()">+3</button>
+                <button id="red-minus-one" onclick="minusOne()">-1</button>
+            </div>
+            <div class="foul"></div>
+            <div class="foul-num">
+                <p>0</p>
+            </div>
+            <div class="foul-btn">
+                <button id="btn-one" onclick="plusOne()">+1</button>
+                <button id="btn-one_minus" onclick="minusOne()">-1</button>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="time"></div>
+            <div class="btn-list"></div>
+            <div class="round"></div>
+            <div class="round-num">
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="blue">
+            <div class="flag"></div>
+            <div class="score">
+                <p>0</p>
+            </div>
+            <div class="score-btn">
+                <button id="blue-plus-one" onclick="plusOne()">+1</button>
+                <button id="blue-plus-two" onclick="plusTwo()">+2</button>
+                <button id="blue-plus-three" onclick="plusThree()">+3</button>
+                <button id="blue-minus-one" onclick="minusOne()">-1</button>
+            <div class="foul"></div>
+            <div class="foul-num">
+                <p>0</p>
+            </div>
+            <div class="foul-btn">
+                <button id="btn-one" onclick="plusOne()">+1</button>
+                <button id="btn-one_minus" onclick="minusOne()">-1</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col item social">
+                    <a href="www.linkedin.com/in/yeh-hong-ping-14559b264" title="Linkedin">
+                        <img src="assets/linkedin.svg" alt="Linkedin"></a>
+                    <a href="https://github.com/KELLSPING" title="GitHub">
+                        <img src="assets/github.svg" alt="GitHub"></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; copyright 2023 by kells</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
