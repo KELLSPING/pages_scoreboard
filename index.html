@@ -30,14 +30,21 @@
         <div class="text">
             <p>Scoreboard</p>
         </div>
-        <div class="mode">
-            <img src="assets/MoonIcon.svg" alt="Dark mode icon">
+        <div class="reset">
+            
+        </div>
+        <div class="btn-list">
+            <button id="reset" onclick="">Reset</button>
+            <button type="button" onclick="changeTheme()" class="theme-button">
+                <img src="assets/MoonIcon.svg" alt="Theme Icon" id="theme-icon" />
+            </button>
         </div>
     </div>
 
 
     <!-- main -->
     <div class="content">
+
         <!-- red -->
         <div class="red">
             <div class="flag">
@@ -46,36 +53,56 @@
                 </div>
             </div>
             <div class="score">
-                <p>0</p>
+                <p id="red-score">0</p>
             </div>
             <div class="score-btn">
-                <button id="red-plus-one" onclick="plusOne()">+1</button>
-                <button id="red-plus-two" onclick="plusTwo()">+2</button>
-                <button id="red-plus-three" onclick="plusThree()">+3</button>
-                <button id="red-minus-one" onclick="minusOne()">-1</button>
+                <button id="red-plus-one" onclick="redScorePlusOne()">+1</button>
+                <button id="red-plus-two" onclick="redScorePlusTwo()">+2</button>
+                <button id="red-plus-three" onclick="redScorePlusThree()">+3</button>
+                <button id="red-clear" onclick="redScoreClear()">Clear</button>
             </div>
             <div class="foul">
                 <p>Foul</p>
             </div>
             <div class="foul-num">
-                <p>0</p>
+                <p id="red-foul">0</p>
             </div>
             <div class="foul-btn">
-                <button id="red-foul-plus-one" onclick="plusOne()">+1</button>
-                <button id="red-foul-minus-one" onclick="minusOne()">-1</button>
+                <button id="red-foul-plus-one" onclick="redFoulPlusOne()">+1</button>
+                <button id="red-foul-clear" onclick="redFoulClear()">Clear</button>
             </div>
         </div>
+
         <!-- middle -->
         <div class="middle">
-            <div class="time">
-                <p>00:00</p>
+            <div class="clock-div">
+                <div>
+                    <input class="hours" id="hour" type="number" value="0" min="0" max="99">
+                </div>
+                <div>
+                    <input class="minutes" id="minute" type="number" value="0" min="0" max="60">
+                </div>
+                <div>
+                    <input class="seconds" id="second" type="number" value="0" min="0" max="60">
+                </div>
             </div>
-            <div class="btn-list"></div>
-            <div class="round"></div>
+            <div class="time-btn-list">
+                <button id="time-start">Start</button>
+                <button id="time-stop">Stop</button>
+                <button id="time-reset">Clear</button>
+            </div>
+            <div class="round">
+                <p>Round</p>
+            </div>
             <div class="round-num">
-                <p>0</p>
+                <p id="round-num">0</p>
+            </div>
+            <div class="round-btn-list">
+                <button id="round-plus-one" onclick="roundNumPlusOne()">+1</button>
+                <button id="round-clear" onclick="roundNumClear()">clear</button>
             </div>
         </div>
+
         <!-- blue -->
         <div class="blue">
             <div class="flag">
@@ -84,23 +111,23 @@
                 </div>
             </div>
             <div class="score">
-                <p>0</p>
+                <p id="blue-score">0</p>
             </div>
             <div class="score-btn">
-                <button id="blue-plus-one" onclick="plusOne()">+1</button>
-                <button id="blue-plus-two" onclick="plusTwo()">+2</button>
-                <button id="blue-plus-three" onclick="plusThree()">+3</button>
-                <button id="blue-minus-one" onclick="minusOne()">-1</button>
+                <button id="blue-plus-one" onclick="blueScorePlusOne()">+1</button>
+                <button id="blue-plus-two" onclick="blueScorePlusTwo()">+2</button>
+                <button id="blue-plus-three" onclick="blueScorePlusThree()">+3</button>
+                <button id="blue-clear" onclick="blueScoreClear()">Clear</button>
             </div>
             <div class="foul">
                 <p>Foul</p>
             </div>
             <div class="foul-num">
-                <p>0</p>
+                <p id="blue-foul">0</p>
             </div>
             <div class="foul-btn">
-                <button id="blue-foul-plus-one" onclick="plusOne()">+1</button>
-                <button id="blue-foul-minus-one" onclick="minusOne()">-1</button>
+                <button id="blue-foul-plus-one" onclick="blueFoulPlusOne()">+1</button>
+                <button id="blue-foul-clear" onclick="blueFoulClear()">clear</button>
             </div>
         </div>
 </div>
@@ -111,16 +138,19 @@
         <div class="contact">
             <p>Contact</p>
             <a href="www.linkedin.com/in/yeh-hong-ping-14559b264" title="Linkedin">
-                <img src="assets/linkedin.svg" alt="Linkedin"></a>
+                <img src="assets/linkedin.svg" alt="Linkedin" id="linkedin-icon"></a>
             <a href="https://github.com/KELLSPING" title="GitHub">
-                <img src="assets/github.svg" alt="GitHub"></a>
+                <img src="assets/github.svg" alt="GitHub" id="github-icon"></a>
         </div>
         <div class="copyright">
             <p>&copy; copyright 2023 by kells</p>
         </div>
-        
     </div>
 
+
+    <!-- js -->
+    <script src="scripts/script.js">
+    </script>
 </body>
 
 </html>
