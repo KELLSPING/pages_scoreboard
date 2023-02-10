@@ -35,7 +35,9 @@
         </div>
         <div class="btn-list">
             <button id="reset" onclick="plusOne()">Reset</button>
-            <img src="assets/MoonIcon.svg" alt="Dark mode icon">
+            <button type="button" onclick="changeTheme()" class="theme-button">
+                <img src="assets/MoonIcon.svg" alt="Theme Icon" id="theme-icon" />
+            </button>
         </div>
     </div>
 
@@ -133,16 +135,19 @@
         <div class="contact">
             <p>Contact</p>
             <a href="www.linkedin.com/in/yeh-hong-ping-14559b264" title="Linkedin">
-                <img src="assets/linkedin.svg" alt="Linkedin"></a>
+                <img src="assets/linkedin.svg" alt="Linkedin" id="linkedin-icon"></a>
             <a href="https://github.com/KELLSPING" title="GitHub">
-                <img src="assets/github.svg" alt="GitHub"></a>
+                <img src="assets/github.svg" alt="GitHub" id="github-icon"></a>
         </div>
         <div class="copyright">
             <p>&copy; copyright 2023 by kells</p>
         </div>
-        
     </div>
 
+
+    <!-- js -->
+    <script src="scripts/script.js">
+    </script>
 </body>
 
 </html>

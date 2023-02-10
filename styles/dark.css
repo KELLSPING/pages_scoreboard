@@ -1,0 +1,281 @@
+/* header */
+.header{
+    display: flex;
+    height: 50px;
+    background-color: #000;
+}
+
+.header .logo{
+    margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo img{
+    height: 80%;
+    width: 80%;
+}
+
+.header .text{
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+}
+
+.header .text p{
+    color: #fff;
+}
+
+.header .btn-list{
+    width: 100%;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header .btn-list button{
+    margin-right: 6px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+
+/* main */
+.content{
+    background-color: #000;
+}
+
+/* red */
+.red .flag{
+    background-color: #f00;
+    height: 70px;
+    width: 100%;
+}
+
+.red .input-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red .input-text input{
+    background-color : #f00; 
+    border: 2px solid #cc0000;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.red .input-text input:hover {
+    outline: 2px solid #fff;
+    border-radius: 3px;
+}
+
+/* red score */
+.red .score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.red .score p{
+    margin: 5px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.red .score-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.red .score-btn button{
+    margin: 0 5px;
+}
+
+/* red foul */
+.red .foul{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.red .foul-num{
+    display: flex;
+    justify-content: center;
+}
+
+.red .foul-num p{
+    color: #fff;
+}
+
+.red .foul p{
+    color: #fff;
+}
+
+.red .foul-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.red .foul-btn button{
+    margin: 0 5px 5px 5px;
+}
+
+/* middle */
+.middle{
+    padding: 20px 0;
+}
+
+/* middle time */
+.middle .time{
+    display: flex;
+    justify-content: center;
+}
+.middle .time p{
+    color: #fff;
+    font-size: 40px;
+}
+
+/* middle time btn list */
+.middle .time-btn-list{
+    display: flex;
+    justify-content: center;
+}
+.middle .time-btn-list button{
+    margin: 0 5px;
+}
+
+/* middle round */
+.middle .round{
+    display: flex;
+    justify-content: center;
+}
+.middle .round p{
+    color: #fff;
+}
+
+/* middle round-num */
+.middle .round-num{
+    display: flex;
+    justify-content: center;
+}
+.middle .round-num p{
+    color: #fff;
+}
+
+/* middle round-btn-list */
+.middle .round-btn-list{
+    display: flex;
+    justify-content: center;
+}
+.middle .round-btn-list button{
+    margin: 0 5px;
+}
+
+/* blue */
+/* blue flag */
+.blue .flag{
+    background-color: #00f;
+    height: 70px;
+    width: 100%;
+}
+.blue .input-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue .input-text input{
+    background-color : #00f;
+    border: 2px solid #0000cc;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.blue .input-text input:hover {
+    outline: 2px solid #fff;
+    border-radius: 3px;
+}
+
+/* blue score */
+.blue .score{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blue .score p{
+    margin: 5px;
+    color: #fff;
+    font-size: 30px;
+}
+
+/* blue score btn */
+.blue .score-btn{
+    display: flex;
+    justify-content: center;
+}
+.blue .score-btn button{
+    margin: 0 5px;
+}
+
+/* blue foul */
+.blue .foul{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.blue .foul p{
+    color: #fff;
+}
+
+/* blue foul num */
+.blue .foul-num{
+    display: flex;
+    justify-content: center;
+}
+.blue .foul-num p{
+    color: #fff;
+}
+
+/* blue foul btn */
+.blue .foul-btn{
+    display: flex;
+    justify-content: center;
+}
+.blue .foul-btn button{
+    margin: 0 5px 5px 5px;
+}
+
+/* footer */
+.footer{
+    background-color: #000;
+    padding: 20px 0 20px 0;
+}
+.footer .contact{
+    display: flex;
+    justify-content: center;
+}
+.footer .contact p{
+    font-size: 16px;
+    color: #fff;
+    margin-right: 10px;
+}
+.footer .contact a{
+    margin: 0 5px;
+}
+.footer .copyright{
+    display: flex;
+    justify-content: center;
+}
+.footer .copyright p{
+    color: #fff;
+}
