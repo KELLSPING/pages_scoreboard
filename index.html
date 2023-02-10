@@ -44,6 +44,7 @@
 
     <!-- main -->
     <div class="content">
+
         <!-- red -->
         <div class="red">
             <div class="flag">
@@ -74,16 +75,21 @@
 
         <!-- middle -->
         <div class="middle">
-            <div class="time">
-                <p>00:00</p>
+            <div class="clock-div">
+                <div>
+                    <input class="hours" id="hour" type="number" value="0" min="0" max="99">
+                </div>
+                <div>
+                    <input class="minutes" id="minute" type="number" value="0" min="0" max="60">
+                </div>
+                <div>
+                    <input class="seconds" id="second" type="number" value="0" min="0" max="60">
+                </div>
             </div>
             <div class="time-btn-list">
-                <button id="time-plus-half" onclick="plusOne()">+0.5</button>
-                <button id="time-plus-one" onclick="plusOne()">+1</button>
-                <button id="time-plus-two" onclick="plusOne()">+2</button>
-                <button id="time-start" onclick="plusOne()">Start</button>
-                <button id="time-stop" onclick="plusOne()">Stop</button>
-                <button id="time-reset" onclick="plusOne()">Clear</button>
+                <button id="time-start">Start</button>
+                <button id="time-stop">Stop</button>
+                <button id="time-reset">Clear</button>
             </div>
             <div class="round">
                 <p>Round</p>

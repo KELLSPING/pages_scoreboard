@@ -134,20 +134,30 @@
     padding: 20px 0;
 }
 
-/* middle time */
-.middle .time{
+/* middle clock */
+.clock-div{
     display: flex;
     justify-content: center;
 }
-.middle .time p{
-    color: #fff;
-    font-size: 40px;
+.clock-div > div{
+    margin: 0 10px;
 }
+.clock-div > div > input{
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+}
+.clock-div > div > div{
+    display: flex;
+    justify-content: center;
+}
+
 
 /* middle time btn list */
 .middle .time-btn-list{
     display: flex;
     justify-content: center;
+    margin: 5px 0;
 }
 .middle .time-btn-list button{
     margin: 0 5px;
