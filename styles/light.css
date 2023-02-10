@@ -27,19 +27,20 @@
     color: #fff;
 }
 
-.header .mode{
+.header .btn-list{
     width: 100%;
-    margin: 6px 20px 6px 0px;
+    margin: 6px 20px 6px 0;
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-.header .mode img{
+.header .btn-list img{
     color: #00f;
+    margin-left: 20px;
 }
 
-.header .mode img:focus{
+.header .btn-list img:focus{
     fill: aqua;
 }
 
