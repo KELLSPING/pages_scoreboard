@@ -167,3 +167,28 @@ function timer(){
 function stopInterval() {
     clearInterval(startTimer);
 }
+
+// operate the reset in the header
+let mHReset = document.getElementById('reset');
+let mRedName = document.getElementById('red-name');
+let mBlueName = document.getElementById('blue-name');
+
+mHReset.addEventListener('click', function () {
+    h.value = 0;
+    m.value = 0;
+    s.value = 0;
+    stopInterval()
+
+    mRedName.value = ''
+    mBlueName.value = ''
+
+    mRoundNum.textContent = 0;
+
+    mRedScore.textContent = 0;
+
+    mRedFoul.textContent = 0;
+
+    mBlueScore.textContent = 0;
+
+    mBlueFoul.textContent = blueFoul;
+})
